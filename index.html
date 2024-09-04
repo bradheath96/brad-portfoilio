@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bradley Heath</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mediaqueries.css" />
+	</head>
+	<body>
+		<nav id="desktop-nav">
+			<div class="logo">Bradley Heath</div>
+			<div class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#Projects">Projects</a></li>
+				<li><a href="#Contact">Contact</a></li>
+			</div>
+		</nav>
+		<nav id="hamburger-nav">
+			<div class="logo">Bradley Heath</div>
+			<div class="hamburger-menu">
+				<div class="hamburger-icon" onClick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="menu-links">
+					<li><a href="#about" onClick="toggleMenu()">About</a></li>
+					<li><a href="#experience" onClick="toggleMenu()">Experience</a></li>
+					<li><a href="#Projects" onClick="toggleMenu()">Project</a></li>
+					<li><a href="#Contact" onClick="toggleMenu()">Contact</a></li>
+				</div>
+			</div>
+		</nav>
+		<section id="profile">
+			<div class="section__pic-container">
+				<img
+					src="./assets/profile-pic.png"
+					alt="Bradley Heath profile picture" />
+			</div>
+			<div class="section__text">
+				<h1 class="title">Bradley Heath</h1>
+				<p class="section__text__p2">Front End Developer</p>
+				<div class="btn_container">
+					<button
+						class="btn btn-colour-2"
+						onClick="window.open('./assets/CV.pdf')">
+						Download CV
+					</button>
+					<button class="btn btn-colour-1" onClick="location.href='./#contact'">
+						Contact
+					</button>
+				</div>
+				<div id="socials-container">
+					<img
+						src="./assets/linkedin.png"
+						alt="My Linkedin profile"
+						class="icon"
+						onClick="location.href='https://www.linkedin.com/in/bradley-heath-032299109/'" />
+					<img
+						src="./assets/github.png"
+						alt="My Github profile"
+						class="icon"
+						onClick="location.href='https://github.com/bradheath96'" />
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<p class="section__text__p1">Get to Know More</p>
+			<h1 class="title">About Me</h1>
+			<div class="section-container">
+				<div class="section__pic-container">
+					<img
+						src="./assets/About-Me.jpg"
+						alt="Profile Picture"
+						class="about-pic" />
+				</div>
+				<div class="techstack-containters">
+					<div class="techstack-grid">
+						<img
+							src="./assets/Techstack Images/HTML5.png"
+							alt="HTML"
+							class="tech-icon" />
+                        <p class="tech-name">HTML5</p>
+						<img
+							src="./assets/Techstack Images/CSS3.png"
+							alt="CSS"
+							class="tech-icon" />
+						<img
+							src="./assets/Techstack Images/JavaScript.png"
+							alt="Javascript"
+							class="tech-icon" />
+						<img
+							src="./assets/Techstack Images/React.png"
+							alt="React"
+							class="tech-icon" />
+						<img
+							src="./assets/Techstack Images/Vite.js.png"
+							alt="Vite"
+							class="tech-icon" />
+						<img
+							src="./assets/Techstack Images/Node.js.png"
+							alt="Node.js"
+							class="tech-icon" />
+						<img
+							src="./assets/Techstack Images/GitHub.png"
+							alt="GitHub"
+							class="tech-icon" />
+						<img
+							src="./assets/Techstack Images/Lighthouse.svg"
+							alt="GitHub"
+							class="tech-icon" />
+					</div>
+					<div class="text-container">
+						<p>
+							I’m an aspiring Front-End Developer with a background in video
+							editing and graphic design. I recently completed a three-month
+							intensive software development course at Northcoders, where I
+							honed my coding skills. I’m passionate about blending my creative
+							design abilities with technical expertise to build dynamic,
+							user-friendly web experiences.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
