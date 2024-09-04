@@ -309,6 +309,33 @@ a:hover {
 	align-items: center;
 }
 
+.tech-item {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+	padding-bottom: 6px;
+}
+
+.tech-name {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+	height: 20px
+}
+
+.tech-item.show .tech-name {
+    opacity: 1;
+    transform: translateY(0);
+    position: absolute;
+}
+
 .tech-icon {
 	width: 80px;
 	height: 80px;
