@@ -107,6 +107,7 @@ nav:hover {
 }
 
 .logo {
+	color: var(--primary-color);
 	font-size: 2rem;
 }
 
@@ -396,7 +397,7 @@ nav:hover {
 
 .tech-name {
 	font-size: 1rem;
-	color: #333;
+	color: var(--primary-color);
 	margin-top: 10px;
 	opacity: 0;
 	transform: translateY(10px);
