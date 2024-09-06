@@ -15,6 +15,15 @@
 				<li><a href="#experience">Experience</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
+				<li>
+					<img
+						id="modeToggle"
+						class="icon colour-icon"
+						src="./assets/dark-mode/theme_light.png"
+						src-light="./assets/dark-mode/theme_light.png"
+						src-dark="./assets/dark-mode/theme_dark.png"
+						alt="Colour Theme Icon" />
+				</li>
 			</ul>
 		</nav>
 		<nav id="hamburger-nav">
@@ -30,6 +39,15 @@
 					<li><a href="#experience" onClick="toggleMenu()">Experience</a></li>
 					<li><a href="#projects" onClick="toggleMenu()">Projects</a></li>
 					<li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
+					<li>
+						<img
+							id="modeToggle2"
+							class="icon colour-icon"
+							src="/assets/dark-mode/theme_light.png"
+							src-light="/assets/dark-mode/theme_light.png"
+							src-dark="/assets/dark-mode/theme_dark.png"
+							alt="Colour Theme Icon" />
+					</li>
 				</div>
 			</div>
 		</nav>
@@ -54,15 +72,19 @@
 				</div>
 				<div id="socials-container">
 					<img
-						src="./assets/linkedin.png"
-						alt="My Linkedin profile"
-						class="icon"
-						onClick="location.href='https://www.linkedin.com/in/bradley-heath-032299109/'" />
-					<img
 						src="./assets/github.png"
-						alt="My Github profile"
-						class="icon"
+						src-light="/assets/dark-mode/github_dark.png"
+						src-dark="/assets/github.png"
+						alt="My github profile"
+						class="icon github-icon"
 						onClick="location.href='https://github.com/bradheath96'" />
+					<img
+						src="./assets/linkedin.png"
+						src-light="./assets/dark-mode/linkedin_dark.png"
+						src-dark="./assets/linkedin.png"
+						alt="My Linkedin profile"
+						class="icon linkedin-icon"
+						onClick="location.href='https://www.linkedin.com/in/bradley-heath-032299109/'" />
 				</div>
 			</div>
 		</section>
@@ -313,6 +335,8 @@
 				<div class="contact-info-container">
 					<img
 						src="assets/email.png"
+						src-light="assets/dark-mode/email_dark.png"
+						src-dark="assets/email.png"
 						alt="Email Icon"
 						class="icon contact-icon email-icon" />
 					<p>
@@ -321,9 +345,12 @@
 				</div>
 				<div class="contact-info-container">
 					<img
-						src="assets/linkedin.png"
-						alt="LinkedIn Icon"
-						class="icon contact-icon" />
+						src="./assets/linkedin.png"
+						src-light="./assets/dark-mode/linkedin_dark.png"
+						src-dark="./assets/linkedin.png"
+						alt="My Linkedin profile"
+						class="icon linkedin-icon"
+						onClick="location.href='https://www.linkedin.com/in/bradley-heath-032299109/'" />
 					<p>
 						<a href="https://www.linkedin.com/in/bradley-heath-032299109/"
 							>LinkedIn</a
@@ -343,7 +370,7 @@
 					</ul>
 				</div>
 			</nav>
-Ÿ		</footer>
+		</footer>
 		<script src="script.js"></script>
 	</body>
 </html>

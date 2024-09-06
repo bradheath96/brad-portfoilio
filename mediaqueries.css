@@ -6,10 +6,6 @@
 		display: flex;
 		padding: 1rem;
 	}
-	#experience,
-	.experience-details-container {
-		margin-top: 2rem;
-	}
 	#profile,
 	.section-containers {
 		display: block;
@@ -74,7 +70,6 @@
 
 	#profile {
 		height: 83vh;
-		margin-bottom: 0;
 		margin-top: 5rem;
 	}
 
@@ -82,9 +77,11 @@
 		font-size: 1rem;
 	}
 
-	#about {
+	#about,
+	#projects,
+	#experience {
 		padding: 0.5rem;
-		margin-top: 10rem;
+		margin-top: 5rem;
 		text-align: center;
 		scroll-margin-top: 5vh;
 	}
@@ -159,12 +156,16 @@
 		align-items: center;
 		justify-content: center;
 	}
+	.article-container ul li {
+		font-size: 0.7rem;
+	}
+
 	.logo-container {
-		gap: 1.5rem;
+		gap: 0.5rem;
 	}
 	.experience-img {
-		width: 70px;
-		height: 70px;
+		width: 60px;
+		height: 60px;
 	}
 
 	/* General mobile adjustments for spacing */
@@ -175,6 +176,8 @@
 
 	.section-containers {
 		flex-direction: column;
+		align-items: center;
+		gap: 1.5rem;
 		padding-left: 0.5rem;
 		padding-right: 0.5rem;
 	}
@@ -182,19 +185,6 @@
 	.section__pic-container {
 		width: 250px;
 		height: 250px;
-	}
-
-	#experience {
-		padding: 0.5rem;
-		text-align: center;
-		scroll-margin-top: 5vh;
-	}
-
-	#projects {
-		padding: 0.5rem;
-		margin-top: 10rem;
-		text-align: center;
-		scroll-margin-top: 5vh;
 	}
 
 	.project-img {
@@ -208,17 +198,16 @@
 	}
 
 	.experience-details-container {
-		max-width: 600px;
-		margin-top: 0;
+		max-width: 100%;
+		margin-top: 0 auto;
+		padding: 0.5rem;
 	}
 
 	.details-container {
-		max-width: 375px;
-		max-height: 350px;
-		margin-bottom: 2rem;
-		margin-left: 0.5rem;
-		margin-right: 0.5rem;
-		padding-top: 0;
+		max-width: 350px;
+		background-color: white;
+		border-radius: 2rem;
+		text-align: center;
 	}
 
 	.article-container {
@@ -229,9 +218,11 @@
 		gap: 1rem;
 	}
 
+	.button-container,
 	.btn {
-		margin: 0;
+		margin: 0 auto;
 	}
+
 	.title {
 		font-size: 1.8rem;
 	}
