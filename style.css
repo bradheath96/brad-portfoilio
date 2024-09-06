@@ -90,7 +90,7 @@ nav li:last-child {
 	padding: 10px
 }
 a {
-	color: var(--secondary-color);
+	color: var(--primary-color);
 	text-decoration: none;
 	text-decoration-color: var(--primary-color)
 }
@@ -107,7 +107,7 @@ nav:hover {
 }
 
 .logo {
-	color: var(--primary-color);
+	color: var(--secondary-color);
 	font-size: 2rem;
 }
 
@@ -268,31 +268,21 @@ nav:hover {
 
 .btn-colour-1,
 .btn-colour-2 {
+	background: var(--button-background);
 	border: var(--button-border) 0.1rem solid;
-	color: var(--secondary-color-2)
+	color: var(--primary-color)
 }
 .btn-colour-1:hover,
 .btn-colour-2:hover {
 	cursor: pointer;
 }
-.btn-colour-1:hoc,
+.btn-colour-1:hover,
 .btn-colour-2:hover {
-	background-color: var(--button-background);
-	color: var(--primary-color)
+	border: var(--button-border) 0.1rem solid;
+	border-color: white;
 }
 
-.btn-colour-1:hover {
-	background-color: var(--secondary-color)
-}
 
-.btn-colour-2 {
-	background: none;
-}
-
-.btn-colour-2:hover {
-	border: var(--button-border);
-	background: var(--secondary-color)
-}
 
 .btn-container {
 	gap: 1rem;
