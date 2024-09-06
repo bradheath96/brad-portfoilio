@@ -10,12 +10,12 @@
 	<body>
 		<nav id="desktop-nav">
 			<div class="logo">Bradley Heath</div>
-			<div class="nav-links">
+			<ul class="nav-links">
 				<li><a href="#about">About</a></li>
 				<li><a href="#experience">Experience</a></li>
-				<li><a href="#Projects">Projects</a></li>
-				<li><a href="#Contact">Contact</a></li>
-			</div>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
 		</nav>
 		<nav id="hamburger-nav">
 			<div class="logo">Bradley Heath</div>
@@ -28,8 +28,8 @@
 				<div class="menu-links">
 					<li><a href="#about" onClick="toggleMenu()">About</a></li>
 					<li><a href="#experience" onClick="toggleMenu()">Experience</a></li>
-					<li><a href="#Projects" onClick="toggleMenu()">Project</a></li>
-					<li><a href="#Contact" onClick="toggleMenu()">Contact</a></li>
+					<li><a href="#projects" onClick="toggleMenu()">Projects</a></li>
+					<li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
 				</div>
 			</div>
 		</nav>
@@ -153,7 +153,6 @@
 			<h1 class="title">Experience</h1>
 			<div class="section-containers">
 				<div class="experience-details-container">
-					<!-- Flip Container 1 -->
 					<div
 						class="flip-container"
 						onclick="this.classList.toggle('flipped');">
@@ -196,8 +195,6 @@
 							</div>
 						</div>
 					</div>
-
-					<!-- Flip Container 2 -->
 					<div
 						class="flip-container"
 						onclick="this.classList.toggle('flipped');">
@@ -253,6 +250,100 @@
 				</div>
 			</div>
 		</section>
+		<section id="projects">
+			<p class="section__text__p1">Browse My Recent</p>
+			<h1 class="title">Projects</h1>
+			<div class="experience-details-container">
+				<div class="section-containers">
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/Calculator.png"
+								alt="Calculator project screenshot"
+								class="project-img" />
+							<h2 class="experience-sub-title project-title">
+								React Calculator
+							</h2>
+							<div class="button-container">
+								<button
+									class="btn btn-colour-2 project-btn"
+									onclick="location.href='https://github.com/bradheath96/bh-calculator'">
+									GitHub
+								</button>
+							</div>
+							<p class="experience__text__p1">
+								Using the skills I’ve learnt with React, HTML and CSS, I built a
+								dynamic calculator that performs basic operations and handles
+								complex functionalities like percentage calculations and sign
+								inversion.
+							</p>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/TravelSync.png"
+								alt="TravelSync project screenshot"
+								class="project-img" />
+							<h2 class="experience-sub-title project-title">TravelSync</h2>
+							<div class="button-container">
+								<button
+									class="btn btn-colour-2 project-btn"
+									onclick="location.href='https://github.com/bradheath96/TravelSync-FE'">
+									GitHub
+								</button>
+							</div>
+
+							<p class="experience__text__p1">
+								For our final project at Northcoders we created TravelSync.
+								TravelSync is a collaborative itinerary planner app that
+								simplifies group travel by allowing users to create, manage, and
+								organize trip plans with friends, featuring interactive maps and
+								seamless itinerary sharing.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<p class="section__text__p1">Get in Touch</p>
+			<h1 class="title">Contact Me</h1>
+			<div class="contact-info-upper-container">
+				<div class="contact-info-container">
+					<img
+						src="assets/email.png"
+						alt="Email Icon"
+						class="icon contact-icon email-icon" />
+					<p>
+						<a href="mailto:bradheath96@gmail.com">bradheath96@gmail.com</a>
+					</p>
+				</div>
+				<div class="contact-info-container">
+					<img
+						src="assets/linkedin.png"
+						alt="LinkedIn Icon"
+						class="icon contact-icon" />
+					<p>
+						<a href="https://www.linkedin.com/in/bradley-heath-032299109/"
+							>LinkedIn</a
+						>
+					</p>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<nav>
+				<div class="nav-links-container">
+					<ul class="nav-links">
+						<li><a href="#about">About</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+Ÿ		</footer>
 		<script src="script.js"></script>
 	</body>
 </html>
