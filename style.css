@@ -8,7 +8,7 @@
 	--primary-color: black; 
 	--primary-color-2: #98c1d9; 
 	--primary-color-3: #3d5a80; 
-	--background-color: #e0fbfc; 
+	--background-color: #ebfeff; 
 	--secondary-color: #293241; 
 	--secondary-color-2: #3d5a80;
 	--button-background: #ee6c4d; 
@@ -146,7 +146,7 @@ nav:hover {
 	position: absolute;
 	top: 100%;
 	right: 0%;
-	background-color: var(--primary-color);
+	background-color: rgba(255, 255, 255, 0.9); 
 	width: fit-content;
 	max-height: 0;
 	overflow: hidden;
@@ -154,6 +154,8 @@ nav:hover {
 }
 
 .menu-links a {
+	color: inherit;
+	opacity: 1;
 	display: block;
 	padding: 10px;
 	text-align: center;
@@ -164,10 +166,12 @@ nav:hover {
 }
 
 .menu-links li {
+	opacity: 1;
 	list-style: none;
 }
 
 .menu-links.open {
+	border-radius: 1;
 	max-height: 300px;
 }
 
@@ -270,7 +274,7 @@ nav:hover {
 .btn-colour-2 {
 	background: var(--button-background);
 	border: var(--button-border) 0.1rem solid;
-	color: var(--primary-color)
+	color: white
 }
 .btn-colour-1:hover,
 .btn-colour-2:hover {
@@ -329,10 +333,9 @@ nav:hover {
 .details-container {
 	padding: 1.5rem;
 	flex: 1;
-	background: var(--primary-color-2);
+	background: white;
 	border-radius: 2rem;
-	border: var(--button-border) 0.1rem solid;
-	border-color: var(--container-border);
+	border: rgb(53, 53, 53, 0.3) 0.1rem solid;
 	text-align: center;
 	min-height: 600px;
 	max-height: 600px;
@@ -517,7 +520,7 @@ article ul li {
 	padding: 1.5rem;
 	box-sizing: border-box;
 	border-radius: 1rem;
-	border: rgb(53, 53, 53) 0.1rem solid;
+	border: rgb(53, 53, 53, 0.3) 0.1rem solid;
 	text-align: center;
 	margin: 1rem;
 }
@@ -594,11 +597,7 @@ article ul li {
 }
 
 .project-btn {
-	margin-top: 1rem;
 	width: 100%;
-	color: rgb(163, 163, 163);
-	background: none;
-	border: 1px solid rgb(163, 163, 163);
 	padding: 0.75rem;
 	border-radius: 1rem;
 	transition: all 300ms ease;
